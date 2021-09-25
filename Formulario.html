@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Formulario de registro</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            h1{
-                font-family: serif;
-                color:#377ba8;
-                background-color: lightgray;
-                text-align: center;
-            }            
-            form{
-                width: 350%;
-                padding: 16px;
-                border-radius: 10px;
-                margin: auto;
-                background-color: #ccc;     
-            }
-            button{
-                text-align: center;
-                font-weight: bold;
-     
-            }
-            form input{
-                padding: 3px 10px;
-                border: 1px;
-                border-radius: 3px;
-                margin: 10px 10px;
-            }
-        </style>
-    </head>
-    <body>
+ 
+<head>
+    <title>Formulario de registro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        h1{
+            font-family: serif;
+            color:#377ba8;
+            background-color: lightgray;
+            text-align: center;
+        }
+        form{
+            width: 350%;
+            padding: 16px;
+            border-radius: 10px;
+            margin: auto;
+            background-color: #ccc;
+ 
+        }
+        button{
+            text-align: center;
+            font-weight: bold;
+ 
+        }
+        form input{
+            padding: 3px 10px;
+            border: 1px;
+            border-radius: 3px;
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+ 
+<body>
     <h1>REGISTRO PARA VACUNACION COVID-19</h1>
     <form action="" method="GET">
-        <label>Nombre:</label> <input type="text">
-        <br>
-        <br>
-        <label>Usuario:</label> <input type="text">
-        <br>
-        <br>
-        <label>Genero:</label> <input type="radio" name="Genero"/> Masculino
-        <input type="radio" name="Genero"/> Femenino
-        <br>
-        <br>
-        <label>Correo:</label> <input type="email">
-        <label>Contraseña:</label> <input type="password">
-        <br>
-        <br>
+        <label>Nombre:</label> <input type="text" />
+        <br />
+        <br />
+        <label>Usuario:</label> <input type="text" />
+        <br />
+        <br />
+        <label>Genero:</label> <input type="radio" name="Genero" /> Masculino
+        <input type="radio" name="Genero" /> Femenino
+        <br />
+        <br />
+        <label>Correo:</label> <input type="email" /> <label>Contraseña:</label>
+        <input type="password" />
+        <br />
+        <br />
         <label for="Cargo">Rol en el equipo:</label>
         <select name="Cargo">
             <option value="" selcted>Selecciona</option>
-            <option value="" >Programador</option>
-            <option value="" >Analista</option>
-            <option value="" >Soporte Tecnico</option>
-            <option value="" >Otro</option>
+            <option value="">Programador</option>
+            <option value="">Analista</option>
+            <option value="">Soporte Tecnico</option>
+            <option value="">Otro</option>
         </select>
-        <br>
-        <br>
-        <input type="checkbox">Declaro haber leído y aceptar las
-        condiciones generales del programa y la normativa sobre protección de datos.
-        <br>
-        <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
+        <br />
+        <br />
+        <input type="checkbox" />Declaro haber leído y aceptar las condiciones
+        generales del programa y la normativa sobre protección de datos.
+        <br />
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
     </form>
-    </body>
+</body>
+ 
 </html>
