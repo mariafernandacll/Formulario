@@ -6,18 +6,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+        body {
+            background-image: url(fondo3.jpg);
+            background-size:cover;
+        }
         h1{
             font-family: serif;
-            color:#377ba8;
-            background-color: lightgray;
+            color:rgb(71, 176, 236);
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
             text-align: center;
+            padding: 15xp;
         }
         form{
-            width: 350px;
+            width: 550px;
             padding: 16px;
             border-radius: 10px;
-            margin: auto;
-            background-color: #ccc;
+            margin:auto;
+            background-color: rgba(71, 176, 236,0.8);
  
         }
         .button{
@@ -36,19 +42,19 @@
  
 <body>
     <h1>REGISTRO PARA VACUNACION COVID-19</h1>
-    <form action="" method="GET">
+    <form action="" method="GET" name="formregistro">
         <label>Nombre:</label> <input type="text" />
         <br />
         <br />
-        <label>Usuario:</label> <input type="text" />
+        <label>Usuario:</label> <input type="text"  id="username" required minlength="8" />
         <br />
         <br />
         <label>Genero:</label> <input type="radio" name="Genero" /> Masculino
         <input type="radio" name="Genero" /> Femenino
         <br />
         <br />
-        <label>Correo:</label> <input type="email" /> <label>Contraseña:</label>
-        <input type="password" />
+        <label>Correo:</label> <input type="email" id="email"/> <label>Contraseña:</label>
+        <input type="password" id="password"/>
         <br />
         <br />
         <label for="Cargo">Rol en el equipo:</label>
@@ -65,9 +71,10 @@
         generales del programa y la normativa sobre protección de datos.
         <br />
         <br />
-        <input class="button" type="submit" value="Enviar" />
+        <input class="button" type="submit" value="Enviar" onclick="validar_formulario();" />
         <input class="button" type="reset" value="Borrar" />
     </form>
+    <script>src="validar.js"</script>
 </body>
  
 </html>
