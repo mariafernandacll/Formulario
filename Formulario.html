@@ -41,6 +41,7 @@
 </head>
  
 <body>
+    
     <h1>REGISTRO PARA VACUNACION COVID-19</h1>
     <form action="" method="GET" name="formregistro">
         <label>Nombre:</label> <input type="text" />
@@ -54,7 +55,7 @@
         <br />
         <br />
         <label>Correo:</label> <input type="email" id="email"/> <label>Contraseña:</label>
-        <input type="password" id="password"/>
+        <input type="password" id="password" required minlength="8"/>
         <br />
         <br />
         <label for="Cargo">Rol en el equipo:</label>
@@ -74,7 +75,7 @@
         <input class="button" type="submit" value="Enviar" onclick="validar_formulario();" />
         <input class="button" type="reset" value="Borrar" />
     </form>
-    <script>src="validar.js"</script>
+    <script src="validar.js"></script>
 </body>
  
 </html>
