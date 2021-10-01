@@ -15,7 +15,7 @@ function validar_formulario (){
     }
         
     if (!contraseña.checkValidity()) {
-        mensaje += "Contraseña requerida con formato xxx@xxx.xx";
+        mensaje += "Contraseña requerida y y longitud minima 8 caracteres";
     }
     
     if (mensaje == "") {
@@ -23,4 +23,4 @@ function validar_formulario (){
     }
     alert(mensaje);
 
-}
+    }

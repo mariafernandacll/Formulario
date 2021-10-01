@@ -54,8 +54,12 @@
         <input type="radio" name="Genero" /> Femenino
         <br />
         <br />
-        <label>Correo:</label> <input type="email" id="email"/> <label>Contraseña:</label>
-        <input type="password" id="password" required minlength="8"/>
+        <label>Correo:</label> <input type="email" id="email"/>
+        <br />
+        <br />
+        <label>Contraseña:</label> <input type="password" id="password" required minlength="8"/>
+        <br />
+        <img src="img.png" onmouseover="mostrarpassword()" onmouseout="ocultarpassword()" width="50px" height="50px">
         <br />
         <br />
         <label for="Cargo">Rol en el equipo:</label>
@@ -76,6 +80,17 @@
         <input class="button" type="reset" value="Borrar" />
     </form>
     <script src="validar.js"></script>
+    <script>
+    function mostrarpassword() {
+        var obj = document.getElementById("password");
+        obj.type = "text";
+    }
+
+    function ocultarpassword() {
+        var obj = document.getElementById("password");
+        obj.type = "password";
+    }
+</script>
 </body>
  
 </html>
